@@ -1,0 +1,71 @@
+section.schools {
+    padding-bottom: 100px;
+    background-color: #202024;
+}
+
+section.schools div.container {
+    flex-direction: column;
+}
+
+section.schools div.container div.info {
+    margin-top: 70px;
+    align-self: stretch;
+    color: #fefefe;
+}
+
+section.schools div.container div.info p {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+section.schools div.container div.school {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    color: #fefefe;
+}
+
+section.schools div.container div.school img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+} 
+
+section.schools div.container div.school div.details-school {
+    width: 90%;
+    margin-left: 5px;
+}
+
+section.schools div.container div.school div.details-school h2 {
+    margin-bottom: 15px;
+}
+
+section.schools div.container div.school div.details-school p {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+section.schools div.container div.school div.details-school div.social-media {
+    margin-top: 15px;
+}
+
+section.schools div.container div.school div.details-school div.social-media p {
+    text-align: justify;
+}
+
+section.schools div.container div.school div.details-school div.social-media a {
+    text-decoration: none;
+}
+
+section.schools div.container div.school div.details-school div.social-media a img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+section.schools div.container div.school div.details-school div.social-media a img.img-first {
+    border-radius: 0px;
+    margin-left: 25px;
+}
