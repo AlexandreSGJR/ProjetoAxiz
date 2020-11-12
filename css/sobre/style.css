@@ -12,12 +12,6 @@ section.sobre div.container {
     /* background-color: antiquewhite; */
 }
 
-section.sobre div.container div.info p {
-    font-size: 14px;
-    margin-top: 10px;
-    font-weight: 500;
-}
-
 section.sobre div.container iframe {
     width: 70%;
     /* width: 1024px; */

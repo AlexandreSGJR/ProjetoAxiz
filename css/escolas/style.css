@@ -13,12 +13,6 @@ section.schools div.container div.info {
     color: #fefefe;
 }
 
-section.schools div.container div.info p {
-    font-size: 14px;
-    margin-top: 10px;
-    font-weight: 500;
-}
-
 section.schools div.container div.school {
     display: flex;
     justify-content: space-between;
