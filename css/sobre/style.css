@@ -1,0 +1,107 @@
+section.sobre {
+    padding-bottom: 100px;
+    background-color: #202024;
+}
+
+section.sobre div.container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    color: #fefefe;
+    /* background-color: antiquewhite; */
+}
+
+section.sobre div.container div.start {
+    margin-top: 70px;
+    align-self: stretch;
+    /* background-color: blue; */
+}
+
+section.sobre div.container div.start p {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+section.sobre div.container iframe {
+    width: 70%;
+    /* width: 1024px; */
+    height: 600px;
+    /* height: 100%; */
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+section.sobre div.container div.progress-videos {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* background-color: burlywood; */
+}
+section.sobre div.container div.progress-videos div.progress-bar {
+    width: 15%;
+    padding: 75px 0px 75px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: brown; */
+}
+
+section.sobre div.container div.progress-videos div.progress-bar div.bolinha{
+    width: 35px;
+    height: 35px;
+    margin-top: -2px;
+    border-radius: 50%;
+    border: 5px solid #8257E5;
+    background-color: #B59DEB;
+}
+
+section.sobre div.container div.progress-videos div.progress-bar div.barra {
+    width: 15px;
+    height: 202px;
+    margin-top: -2px;
+    background-color: #8257E5;
+}
+
+section.sobre div.container div.progress-videos div.videos {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* background-color: aquamarine; */
+}
+
+section.sobre div.container div.progress-videos div.videos div.video {
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s;
+    /* flex-direction: column; */
+    /* background-color: cadetblue; */
+}
+
+section.sobre div.container div.progress-videos div.videos div.video:hover {
+    background-color: #2d2d33;
+}
+
+section.sobre div.container div.progress-videos div.videos div.video a {
+    color: #707070;
+    text-decoration: none;
+}
+
+section.sobre div.container div.progress-videos div.videos div.video:nth-child(n+2) {
+    margin-top: 50px;
+}
+section.sobre div.container div.progress-videos div.videos div.video img {
+    max-width: 360px;
+}
+
+section.sobre div.container div.progress-videos div.videos div.video div.details-video {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding-left: 50px;
+    /* cursor: pointer; */
+    /* background-color: blueviolet; */
+}
