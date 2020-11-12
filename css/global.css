@@ -47,8 +47,9 @@ header div.container a p {
 }
 
 .info {
+    display: flex;
+    justify-content: space-between;
     margin-top: 70px;
-    align-self: stretch;
     color: #fefefe;
 }
 

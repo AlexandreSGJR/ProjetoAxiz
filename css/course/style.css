@@ -6,3 +6,59 @@ section.cursos {
 section.cursos div.container {
     flex-direction: column;
 }
+
+section.cursos div.container div.info select {
+    width: 150px;
+    height: 35px;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: #FEFEFE;
+    border: 1px solid #FEFEFE;
+    background-color: transparent;
+}
+
+section.cursos div.container div.info select option {
+    color: #202024;
+}
+
+section.cursos div.container div.info select option:disabled {
+    color: #707070;
+    background-color: #CECECE;
+}
+
+section.cursos div.container div.choose-course {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+section.cursos div.container div.choose-course div.bt-course {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    background-color: #FEFEFE;
+}
+
+section.cursos div.container div.choose-course div.bt-course:nth-child(n + 2) {
+    margin-left: 25px;
+}
+
+section.cursos div.container div.choose-course div.bt-course img {
+    width: 75px;
+    margin-bottom: 20px;
+}
+
+section.cursos div.container div.choose-course div.bt-course p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #B59DEB;
+}
+
+section.cursos div.container div.choose-course div.bt-course:hover {
+    background-color: #8257E5;
+}
