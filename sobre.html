@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/sobre/style.css">
+    <title>Sobre</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+                <img src="img/icons/3d-lilas.svg" class="logo">
+                <p>Axiz</p>
+            </a>
+            <a href="login.html">
+                <img src="img/icons/log-out-lilas.svg" class="logout">
+            </a>
+        </div>
+    </header>
+
+    <section class="sobre">
+        <div class="container">
+            <div class="start">
+                <h2>Conheça melhor a computação gráfica</h2>
+                <p>Nessa página temos uma trilha com expliações e curiosidades sobre o mundo da computação gráfica</p>
+            </div>
+
+            <iframe id="id_iframe" src="https://www.youtube.com/embed/-4_OU95nKuU" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <div class="progress-videos">
+                <div class="progress-bar">
+                    <div class="bolinha"></div>
+                    <div class="barra"></div>
+                    <div class="bolinha"></div>
+                    <div class="barra"></div>
+                    <div class="bolinha"></div>
+                    <div class="barra"></div>
+                    <div class="bolinha"></div>
+                    <div class="barra"></div>
+                    <div class="bolinha"></div>
+                    <div class="barra"></div>
+                    <div class="bolinha"></div>
+                </div>
+                <div class="videos">
+                    <div id="video1" class="video">
+                        <img src="https://img.youtube.com/vi/-4_OU95nKuU/mqdefault.jpg">
+                        <div class="details-video">
+                            <h2>O que é?</h2>
+                            <p>Nesse vídeo é explicado de forma rapida o que é e como funciona a computação gráfica.</p>
+                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos: <u>https://www.youtube.com/user/nerdologia</u></a>
+                        </div>
+                    </div>
+
+                    <div id="video2" class="video">
+                        <img src="https://img.youtube.com/vi/_0Y6drDRLqA/mqdefault.jpg">
+                        <div class="details-video">
+                            <h2>Como era antes ?</h2>
+                            <p>Como era antes do CG, as técnicas utilizadas nos filmes como "star wars" e "tempos modernos"</p>
+                            <a href="https://www.youtube.com/channel/UCli_uCS6jnJDfzswtGRlTGQ" target="blank">Créditos: <u>https://www.youtube.com/channel/UCli_uCS6jnJDfzswtGRlTGQ</u></a>
+                        </div>
+                    </div>
+
+                    <div id="video3" class="video">
+                        <img src="https://img.youtube.com/vi/to2eLxAx4TU/mqdefault.jpg">
+                        <div class="details-video">
+                            <h2>Até onde é possível ir ?</h2>
+                            <p>Faça o teste desse vídeo e veja você mesmo se é possível reconhecer o real do digital.</p>
+                            <a href="https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA" target="blank">Créditos: <u>https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA</u></a>
+                        </div>
+                    </div>
+
+                    <div id="video4" class="video">
+                        <img src="https://img.youtube.com/vi/OxIKvWDYUsk/mqdefault.jpg">
+                        <div class="details-video">
+                            <h2>Um pouquinho da história...</h2>
+                            <p>Vídeo do canal pipocando sobre a história do cinema juntamente com a história do CG.</p>
+                            <a href="https://www.youtube.com/channel/UCBFLqK7PAP9DQ3JpIrWFI7w" target="blank">Créditos: <u>https://www.youtube.com/channel/UCBFLqK7PAP9DQ3JpIrWFI7w</u></a>
+                        </div>
+                    </div>
+
+                    <div id="video5" class="video">
+                        <img src="https://img.youtube.com/vi/C1c7Ymw2V90/mqdefault.jpg">
+                        <div class="details-video">
+                            <h2>Curiosidade</h2>
+                            <p>Aqui temos uma pequena demonstração de como foi feito o personagem scar no filme REI LEÃO.</p>
+                            <a href="https://www.youtube.com/watch?v=C1c7Ymw2V90&t=24s" target="blank">Créditos: <u>https://www.youtube.com/watch?v=C1c7Ymw2V90&t=24s</u></a>
+                        </div>
+                    </div>
+
+                    <div id="video6" class="video">
+                        <img src="https://img.youtube.com/vi/pTk8rrt87tw/mqdefault.jpg">
+                        <div class="details-video">
+                            <h2>Um pouquinho sobre o mercado...</h2>
+                            <p>Live de bate papo entre profissionais da area, como o diretor da faculdade Melies, uma das faculdades mais conceituadas no mundo do CG.</p>
+                            <a href="https://www.youtube.com/channel/UCab7N4IEP80Y4EUCschf22Q" target="blank">Créditos: <u>https://www.youtube.com/channel/UCab7N4IEP80Y4EUCschf22Q</u></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>©Todos os direitos reservados.</h4>
+    </footer>
+</body>
+
+</html>
+<script src="js/sessao.js"></script>
+<script src="js/changeVideo.js"></script>
+
+<script>
+    document.getElementById('video1').onclick = function () {
+        changeVideo('id_iframe','-4_OU95nKuU');
+    }
+
+    document.getElementById('video2').onclick = function () {
+        changeVideo('id_iframe','_0Y6drDRLqA');
+    }
+
+    document.getElementById('video3').onclick = function () {
+        changeVideo('id_iframe','to2eLxAx4TU');
+    }
+
+    document.getElementById('video4').onclick = function () {
+        changeVideo('id_iframe','OxIKvWDYUsk');
+    }
+
+    document.getElementById('video5').onclick = function () {
+        changeVideo('id_iframe','C1c7Ymw2V90');
+    }
+
+    document.getElementById('video6').onclick = function () {
+        changeVideo('id_iframe','pTk8rrt87tw');
+    }
+</script>
