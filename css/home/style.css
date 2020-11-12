@@ -1,0 +1,73 @@
+section.options {
+    height: calc(100vh - 100px);
+    background-color: #202024;
+}
+
+section.options div.container {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.options div.container h2 {
+    font-size: 32px;
+    margin-bottom: 100px;
+    color: #fefefe;
+}
+
+section.options div.container div.cont-options {
+    width: 50%;
+    min-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.options div.container div.cont-options div.option {
+    width: 250px;
+    height: 250px;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 2px solid #B59DEB;
+} 
+
+section.options div.container div.cont-options div.option p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: 0.5s;
+    color: #B59DEB;
+}
+
+section.options div.container div.cont-options div.option path {
+    color: #B59DEB;
+    /* transition: 0.5s; */
+}
+
+/* EFEITO HOVER */
+
+section.options div.container div.cont-options div.option:hover {
+    cursor: pointer;
+    border-color: #8257E5;
+    background-color: #8257E5;
+}
+
+/* section.options div.container div.cont-options div.option:hover {
+    cursor: pointer;
+    border-color: #8257E5;
+}
+
+section.options div.container div.cont-options div.option:hover path {
+    color: #8257E5;
+}
+
+section.options div.container div.cont-options div.option:hover p {
+    color: #8257E5;
+} */
+
+/* FIM EFEITO HOVER */
