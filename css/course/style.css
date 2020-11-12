@@ -1,0 +1,8 @@
+section.cursos {
+    padding-bottom: 100px;
+    background-color: #202024;
+}
+
+section.cursos div.container {
+    flex-direction: column;
+}

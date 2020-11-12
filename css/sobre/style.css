@@ -12,13 +12,7 @@ section.sobre div.container {
     /* background-color: antiquewhite; */
 }
 
-section.sobre div.container div.start {
-    margin-top: 70px;
-    align-self: stretch;
-    /* background-color: blue; */
-}
-
-section.sobre div.container div.start p {
+section.sobre div.container div.info p {
     font-size: 14px;
     margin-top: 10px;
     font-weight: 500;

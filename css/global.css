@@ -46,6 +46,13 @@ header div.container a p {
     color: #B59DEB;
 }
 
+.info {
+    margin-top: 70px;
+    align-self: stretch;
+    color: #fefefe;
+}
+
+
 footer {
     width: 100%;
     height: 70px;
