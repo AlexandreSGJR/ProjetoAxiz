@@ -6,3 +6,4 @@ function changeTheme() {
     theme == 1 ? menu_3d.style.display = 'flex' : menu_3d.style.display = 'none';
     theme == 2 ? menu_2d.style.display = 'flex' : menu_2d.style.display = 'none';
 }
+
