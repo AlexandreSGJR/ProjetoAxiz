@@ -56,6 +56,7 @@ function changeTheme() {
 
     desativarBts();
 
+    document.getElementById('id_iframe').src = `https://www.youtube.com/embed/none/`;
     document.getElementById('id_sec_course').style.display = 'none';
 }
 
@@ -69,11 +70,6 @@ function desativarBts () {
         i++;
     }
 }
-
-// function changeVideo(iframe, url) {
-//     var video = document.getElementById(iframe);
-//     video.src = `https://www.youtube.com/embed/${url}/?&autoplay=1`;
-// }
 
 function changeCourse(array_video) {
     document.getElementById('id_sec_course').style.display = 'flex';
@@ -90,10 +86,10 @@ function changeCourse(array_video) {
 
     document.getElementById('id_iframe').src = `https://www.youtube.com/embed/${array_video[1].url}/`;
 
-    // ids = []
+    ids = []
 
     for (var i = 1; i < array_video.length; i++) {
-        // ids.push()
+        ids.push(`${array_video[0].name}${i}`);
         document.getElementById('id_videos').innerHTML +=
             `<div class="video" id="${array_video[0].name}${i}">
             <img src="https://img.youtube.com/vi/${array_video[i].url}/mqdefault.jpg">
@@ -106,13 +102,30 @@ function changeCourse(array_video) {
         `;
     }
 
-    for (var i = 1; i < array_video.length - 1; i++) {
-        document.getElementById(`${array_video[0].name}${i}`).onclick = function () {
-            console.log(i)
-            document.getElementById('id_iframe').src = `https://www.youtube.com/embed/${array_video[i].url}/?&autoplay=1`;
-        }
+    for (var i = 1, j = 0; i <= ids.length; i++, j++) {
+        // console.log(i);
+        // console.log(`${array_video[0].name}${i}`);
+        // console.log(`${array_video[i].url}`);
+        // console.log(document.getElementById(`${array_video[0].name}${i}`));
+
+        darFuncao(ids[j],array_video[i].url);
+
+        // document.getElementById(`${array_video[0].name}${i}`).onclick = function () {
+            
+        //     document.getElementById('id_iframe').src = `https://www.youtube.com/embed/${array_video[i].url}/?&autoplay=1`;
+        //     console.log(i);
+        //     console.log(`${array_video[0].name}${i}`);
+        //     console.log(`${array_video[i].url}`);
+        //     console.log(document.getElementById(`${array_video[0].name}${i}`));
+    
+        // }
     }
 
+    function darFuncao(id,video) {
+        document.getElementById(id).onclick = function () {
+            document.getElementById('id_iframe').src = `https://www.youtube.com/embed/${video}/?&autoplay=1`;
+        }
+    }
 
 }
 
