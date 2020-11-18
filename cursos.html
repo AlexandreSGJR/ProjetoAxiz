@@ -28,7 +28,7 @@
             <div class="info">
                 <div>
                     <h2>Está precisando de um professor ?</h2>
-                    <p>Entre em contato com uma das escolas mais reconhecidas do mercado!</p>
+                    <p>Escolha um tema ao lado e aproveite os cursos disponíveis!</p>
                 </div>
                 <select id="id_tema" onchange="changeTheme()">
                     <option selected disabled>Selecione o tema</option>
@@ -38,109 +38,63 @@
             </div>
 
             <div id="3d_menu" class="choose-course" style="display: none;">
-                <div class="bt-course" id="bt-zbrush">
+                <div class="bt-course" id="bt_zbrush">
                     <img src="img/icons/zbrush-lilas.svg">
                     <p>Zbrush</p>
                 </div>
 
-                <div class="bt-course">
+                <div class="bt-course" id="bt_maya">
                     <img src="img/icons/3d-lilas.svg">
                     <p>Maya</p>
                 </div>
 
-                <div class="bt-course">
+                <div class="bt-course" id="bt_texture">
                     <img src="img/icons/lines-lilas.svg">
                     <p>Texture</p>
                 </div>
 
-                <div class="bt-course">
+                <div class="bt-course" id="bt_mtr">
                     <img src="img/icons/mtr-lilas.svg">
                     <p>M.T.R.</p>
                 </div>
             </div>
 
             <div id="2d_menu" class="choose-course" style="display: none">
-                <div class="bt-course">
+                <div class="bt-course" id="bt_desenho">
                     <img src="img/icons/artist-lilas.svg">
                     <p>Básico</p>
                 </div>
 
-                <div class="bt-course">
+                <div class="bt-course" id="bt_personagem">
                     <img src="img/icons/ninja-lilas.svg">
                     <p>Personagens</p>
                 </div>
 
-                <div class="bt-course">
+                <div class="bt-course" id="bt_cenario">
                     <img src="img/icons/cenario-lilas.svg">
                     <p>Cenários</p>
                 </div>
 
-                <div class="bt-course">
+                <div class="bt-course" id="bt_pintura">
                     <img src="img/icons/pen-tablet-lilas.svg">
                     <p>Pintura Digital</p>
                 </div>
             </div>
 
-            <section class="course">
-                <div class="title">
+            <section class="course" id="id_sec_course" style="display: none;">
+                <div class="title" id="title_creditos">
                     <h2>Curso</h2>
                     <p>creditos</p>
                 </div>
 
-                <div class="videos">
-                    <iframe id="id_iframe" src="https://www.youtube.com/embed/xpCM3Y7vuX4" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-
-                    <div class="video">
-                        <img src="https://img.youtube.com/vi/-4_OU95nKuU/mqdefault.jpg">
-                        <div class="details-video">
-                            <h2>O que é?</h2>
-                            <p>Nesse vídeo é explicado de forma rapida o que é e como funciona a computação gráfica.</p>
-                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos:
-                                <u>https://www.youtube.com/user/nerdologia</u></a>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <img src="https://img.youtube.com/vi/-4_OU95nKuU/mqdefault.jpg">
-                        <div class="details-video">
-                            <h2>O que é?</h2>
-                            <p>Nesse vídeo é explicado de forma rapida o que é e como funciona a computação gráfica.</p>
-                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos:
-                                <u>https://www.youtube.com/user/nerdologia</u></a>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <img src="https://img.youtube.com/vi/-4_OU95nKuU/mqdefault.jpg">
-                        <div class="details-video">
-                            <h2>O que é?</h2>
-                            <p>Nesse vídeo é explicado de forma rapida o que é e como funciona a computação gráfica.</p>
-                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos:
-                                <u>https://www.youtube.com/user/nerdologia</u></a>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <img src="https://img.youtube.com/vi/-4_OU95nKuU/mqdefault.jpg">
-                        <div class="details-video">
-                            <h2>O que é?</h2>
-                            <p>Nesse vídeo é explicado de forma rapida o que é e como funciona a computação gráfica.</p>
-                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos:
-                                <u>https://www.youtube.com/user/nerdologia</u></a>
-                        </div>
-                    </div>
-                    <div class="video">
-                        <img src="https://img.youtube.com/vi/-4_OU95nKuU/mqdefault.jpg">
-                        <div class="details-video">
-                            <h2>O que é?</h2>
-                            <p>Nesse vídeo é explicado de forma rapida o que é e como funciona a computação gráfica.</p>
-                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos:
-                                <u>https://www.youtube.com/user/nerdologia</u></a>
-                        </div>
-                    </div>
-                </div>
-        </div>
+                <div class="videos" id="id_videos"></div>
+            </section>
         </div>
     </section>
+    
+    <footer>
+        <h4>©Todos os direitos reservados.</h4>
+    </footer>
 </body>
 
 </html>

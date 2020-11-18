@@ -1,4 +1,9 @@
+body {
+    background-color: #202024;
+}
+
 section.cursos {
+    min-height: calc(100vh - 170px);
     padding-bottom: 100px;
     background-color: #202024;
 }
@@ -9,7 +14,7 @@ section.cursos div.container {
 
 section.cursos div.container div.info select {
     width: 150px;
-    height: 35px;
+    height: 40px;
     padding-left: 10px;
     border-radius: 10px;
     color: #FEFEFE;
@@ -40,6 +45,7 @@ section.cursos div.container div.choose-course div.bt-course {
     align-items: center;
     justify-content: center;
     transition: 0.5s;
+    cursor: pointer;
     border-radius: 10px;
     background-color: #FEFEFE;
 }
@@ -60,6 +66,10 @@ section.cursos div.container div.choose-course div.bt-course p {
 }
 
 section.cursos div.container div.choose-course div.bt-course:hover {
+    background-color: #8257E5;
+}
+
+section.cursos div.container div.choose-course div.bt-course.bt_ativado {
     background-color: #8257E5;
 }
 
@@ -112,6 +122,7 @@ section.cursos div.container section.course div.videos div.video {
     display: flex;
     cursor: pointer;
     transition: 0.3s;
+    color: #FEFEFE;
     /* flex-direction: column; */
     /* background-color: cadetblue; */
 }
@@ -138,6 +149,6 @@ section.cursos div.container section.course div.videos div.video div.details-vid
     justify-content: space-evenly;
     flex-direction: column;
     padding-left: 50px;
-    /* cursor: pointer; */
+    cursor: pointer;
     /* background-color: blueviolet; */
 }

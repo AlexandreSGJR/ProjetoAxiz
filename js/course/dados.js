@@ -1,7 +1,8 @@
-var videos = [
-    zbrush = [
+var videos = {
+    zbrush: [
         {
-            title_curso: 'Curso RÁPIDO de Zbrush | Workbox'
+            title_curso: 'Curso RÁPIDO de Zbrush | Workbox',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'Curso Básico de Zbrush - Conhecendo a Interface | Workbox',
@@ -41,9 +42,10 @@ var videos = [
         // fim basico
     ],
 
-    maya = [
+    maya: [
         {
-            title_curso: 'Tutoriais Maya | Workbox 3D'
+            title_curso: 'Tutoriais Maya | Workbox 3D',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'Curso de Introdução ao Maya • Aula 1/6 | WorkBox',
@@ -143,11 +145,12 @@ var videos = [
             creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY_lheNMD1ADa5_tFZHyH3b6'
         },
         // extras
-    ], 
+    ],
 
-    texture = [
+    texture: [
         {
-            title_curso: 'Retopologia e Textura | Workbox 3D'
+            title_curso: 'Retopologia e Textura | Workbox 3D',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'O que é Retopologia? | Workbox',
@@ -177,9 +180,10 @@ var videos = [
         },
     ],
 
-    modelagem_textura_render = [
+    modelagem_textura_render: [
         {
-            title_curso: 'Modelagem, Textura e Render | Workbox 3D'
+            title_curso: 'Modelagem, Textura e Render | Workbox 3D',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'Modelagem, Textura e Render • Parte 1 | Workbox',
@@ -193,9 +197,10 @@ var videos = [
         },
     ],
 
-    desenho = [
+    desenho: [
         {
-            title_curso: 'Desenho Básico | Workbox 2D'
+            title_curso: 'Desenho Básico | Workbox 2D',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'Curso de Desenho Básico - Perspectiva | Workbox',
@@ -219,9 +224,10 @@ var videos = [
         },
     ],
 
-    personagem = [
+    personagem: [
         {
-            title_curso: 'Como Criar Personagens | Workbox'
+            title_curso: 'Como Criar Personagens | Workbox',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'Como Criar Personagens - Usando Formas Básicas | Workbox',
@@ -240,9 +246,10 @@ var videos = [
         },
     ],
 
-    cenario = [
+    cenario: [
         {
-            title_curso: 'Curso Criando Cenários | Workbox'
+            title_curso: 'Curso Criando Cenários | Workbox',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'Criando Cenários - Thumbnails | Workbox',
@@ -271,9 +278,10 @@ var videos = [
         },
     ],
 
-    pintura = [
+    pintura: [
         {
-            title_curso: 'Cursos de Pintura Digital Completo | Workbox'
+            title_curso: 'Cursos de Pintura Digital Completo | Workbox',
+            creditos_curso: 'Escola revolution'
         },
         {
             title: 'Curso de Pintura Digital - Interface e Blocagem da Pintura | Workbox',
@@ -296,4 +304,4 @@ var videos = [
             creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY8h4b6PH2vSNua_X8rKwZ0K'
         },
     ]
-];
+};
