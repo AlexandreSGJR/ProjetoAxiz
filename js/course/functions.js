@@ -121,9 +121,18 @@ function changeCourse(array_video) {
         // }
     }
 
+    function limparSelecao(id) {
+        for(var i = 0; i < id.length; i++) {
+            document.getElementById(`${id[i]}`).style.backgroundColor = '#202024';
+        }
+    }
+
     function darFuncao(id,video) {
         document.getElementById(id).onclick = function () {
             document.getElementById('id_iframe').src = `https://www.youtube.com/embed/${video}/?&autoplay=1`;
+            limparSelecao(ids);
+            document.getElementById(`${id}`).style.backgroundColor = '#2d2d33';
+            window.location.href = '#id_iframe';
         }
     }
 
