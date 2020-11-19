@@ -1,6 +1,7 @@
 var videos = {
     zbrush: [
-        {
+        {   
+            name: 'zbrush',
             title_curso: 'Curso RÁPIDO de Zbrush | Workbox',
             creditos_curso: 'Escola revolution'
         },
@@ -44,6 +45,7 @@ var videos = {
 
     maya: [
         {
+            name: 'maya',
             title_curso: 'Tutoriais Maya | Workbox 3D',
             creditos_curso: 'Escola revolution'
         },
@@ -149,6 +151,7 @@ var videos = {
 
     texture: [
         {
+            name: 'texture',
             title_curso: 'Retopologia e Textura | Workbox 3D',
             creditos_curso: 'Escola revolution'
         },
@@ -182,6 +185,7 @@ var videos = {
 
     modelagem_textura_render: [
         {
+            name: 'mtr',
             title_curso: 'Modelagem, Textura e Render | Workbox 3D',
             creditos_curso: 'Escola revolution'
         },
@@ -199,6 +203,7 @@ var videos = {
 
     desenho: [
         {
+            name: 'desenho',
             title_curso: 'Desenho Básico | Workbox 2D',
             creditos_curso: 'Escola revolution'
         },
@@ -226,6 +231,7 @@ var videos = {
 
     personagem: [
         {
+            name: 'personagem',
             title_curso: 'Como Criar Personagens | Workbox',
             creditos_curso: 'Escola revolution'
         },
@@ -248,6 +254,7 @@ var videos = {
 
     cenario: [
         {
+            name: 'cenario',
             title_curso: 'Curso Criando Cenários | Workbox',
             creditos_curso: 'Escola revolution'
         },
@@ -280,6 +287,7 @@ var videos = {
 
     pintura: [
         {
+            name: 'pintura',
             title_curso: 'Cursos de Pintura Digital Completo | Workbox',
             creditos_curso: 'Escola revolution'
         },
