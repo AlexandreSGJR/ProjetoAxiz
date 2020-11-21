@@ -45,8 +45,9 @@
                         <button>LOGIN</button>
                         <p id="cadastro">Cadastre-se</p>
                     </form>
-                    <div class="icon" id="icon">
-                        <img style="display: none;" src="img/gif/gif-icon-white.gif">
+                    <div class="icon" id="img_aguarde_login" style="display: none;">
+                        <img src="img/gif/gif-icon-top2.gif">
+                        <span>Aguarde...</span>
                     </div>
                 </div>
             </div>
@@ -64,8 +65,9 @@
                         <button>CADASTRAR</button>
                         <p id="voltar">Cancelar</p>
                     </form>
-                    <div class="icon" id="img_aguarde">
-                        <img style="display: none;" src="img/gif/gif-icon-white.gif">
+                    <div class="icon" id="img_aguarde_cadastro" style="display: none;">
+                        <img src="img/gif/gif-icon-top2.gif">
+                        <span>Aguarde...</span>
                     </div>
                 </div>
             </div>
@@ -84,7 +86,7 @@
     }
 
     function cadastrar() {
-        aguardar();
+        aguardar(form_cadastro, img_aguarde_cadastro);
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
             method: "POST",
@@ -92,7 +94,6 @@
         }).then(function (response) {
 
             if (response.ok) {
-                alert('top')
                 irlog();
                 // window.location.href='login.html';
 
@@ -103,7 +104,7 @@
                     // div_erro.innerHTML = resposta;
                     alert(resposta)
                 });
-                finalizar_aguardar();
+                finalizar_aguardar(form_cadastro);
             }
         });
 
@@ -111,7 +112,7 @@
     }
 
     function entrar() {
-        aguardar();
+        aguardar(form_login, img_aguarde_login);
         var formulario = new URLSearchParams(new FormData(form_login));
         fetch("/usuarios/autenticar", {
             method: "POST",
@@ -125,8 +126,7 @@
                     sessionStorage.login_usuario_meuapp = json.login;
                     sessionStorage.nome_usuario_meuapp = json.nome;
 
-                    // alert('entrei');
-                    sessionStorage.setItem("acesso",1);
+                    sessionStorage.setItem("acesso", 1);
                     window.location.href = 'index.html';
                 });
 
@@ -136,25 +136,37 @@
 
                 resposta.text().then(texto => {
                     console.error(texto);
-                    finalizar_aguardar(texto);
+                    finalizar_aguardar(form_login, img_aguarde_login);
                 });
             }
         });
 
         return false;
     }
-    
 
-function aguardar(idForm) {
-    idForm.style.display = 'none';
-    img_aguarde.style.display='block';
-    // div_erro.style.display='none';
-}
 
-function finalizar_aguardar(idForm) {
-    idForm.style.display = 'block';
-    img_aguarde.style.display='none';
-    // div_erro.style.display='block';
-}
+    function aguardar(idForm, idIcon) {
+        idForm.style.display = 'none';
+        idIcon.style.display = 'flex';
+    }
 
+    function finalizar_aguardar(idForm, idIcon) {
+        idForm.style.display = 'block';
+        idIcon.style.display = 'none';
+    }
+
+    window.onload = verificarTela;
+    function verificarTela() {
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+
+        if (windowWidth <= 600) {
+            document.getElementById('icon_menu1').classList.remove('fa-3x');
+            document.getElementById('icon_menu1').classList.add('fa-2x');
+            document.getElementById('icon_menu2').classList.remove('fa-3x');
+            document.getElementById('icon_menu2').classList.add('fa-2x');
+            document.getElementById('icon_menu3').classList.remove('fa-3x');
+            document.getElementById('icon_menu3').classList.add('fa-2x');
+        }
+    }
 </script>

@@ -17,16 +17,16 @@ section.options div.container h2 {
 }
 
 section.options div.container div.cont-options {
-    width: 50%;
-    min-width: 800px;
+    max-width: 800px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 section.options div.container div.cont-options div.option {
     width: 250px;
     height: 250px;  
+    margin-left: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,6 +35,10 @@ section.options div.container div.cont-options div.option {
     border-radius: 10px;
     border: 2px solid #B59DEB;
 } 
+
+section.options div.container div.cont-options div.option:nth-child(1) {
+    margin-left: 0px;
+}
 
 section.options div.container div.cont-options div.option p {
     font-size: 18px;
@@ -46,7 +50,6 @@ section.options div.container div.cont-options div.option p {
 
 section.options div.container div.cont-options div.option path {
     color: #B59DEB;
-    /* transition: 0.5s; */
 }
 
 /* EFEITO HOVER */
@@ -56,18 +59,72 @@ section.options div.container div.cont-options div.option:hover {
     border-color: #8257E5;
     background-color: #8257E5;
 }
-
-/* section.options div.container div.cont-options div.option:hover {
-    cursor: pointer;
-    border-color: #8257E5;
-}
-
-section.options div.container div.cont-options div.option:hover path {
-    color: #8257E5;
-}
-
-section.options div.container div.cont-options div.option:hover p {
-    color: #8257E5;
-} */
-
 /* FIM EFEITO HOVER */
+
+@media (max-width: 800px) {
+    section.options div.container {
+        width: 90%;
+    }
+
+    section.options div.container div.cont-options div.option {
+        width: 170px;
+        height: 170px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    section.options div.container div.cont-options div.option p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    section.options div.container {
+        width: 90%;
+    }
+
+    section.options div.container h2 {
+        margin-bottom: 25px;
+    }
+
+    section.options div.container div.cont-options {
+        width: 100%;
+        flex-direction: column;
+    }
+    section.options div.container div.cont-options div.option {
+        width: 200px;
+        height: 130px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+    }
+    section.options div.container div.cont-options div.option p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 330px) {
+    section.options div.container {
+        width: 90%;
+    }
+
+    section.options div.container h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    section.options div.container div.cont-options {
+        width: 100%;
+        flex-direction: column;
+    }
+    section.options div.container div.cont-options div.option {
+        width: 180px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+    section.options div.container div.cont-options div.option p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+

@@ -10,8 +10,8 @@ div.cont section.login {
 }
 
 div.cont section.login div.container div.card {
-    width: 550px;
-    min-height: 500px;
+    width: 450px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,7 +80,50 @@ div.cont section.login div.container div.card form p:hover {
     opacity: 0.5;
 }
 
+div.cont section.login div.container div.card div.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 div.cont section.login div.container div.card div.icon img {
     width: 50px;
     border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    div.cont {
+        height: calc(100vh - 100px);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.cont section.login div.container {
+        width: 100%;
+        height: calc(100vh - 250px);
+        align-items: center;
+    }
+
+    div.cont section.login div.container div.card {
+        width: 80%;
+        min-width: 250px;
+        height: 380px;
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+
+    div.cont section.login div.container div.card img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    div.cont section.login div.container div.card p {
+        margin-bottom: 0px;
+    }
+
+    div.cont section.login div.container div.card div.icon img {
+        width: 50px;
+        border-radius: 50%;
+    }
 }

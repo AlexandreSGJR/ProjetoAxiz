@@ -26,3 +26,27 @@ section.introduction div.container div {
 section.introduction div.container div h3 {
     margin-bottom: 50px;
 }
+
+@media(max-width: 600px) {
+    section.introduction {
+        width: 100%;
+        height: 150px;
+        border-bottom-left-radius: 50px;
+    }
+
+    section.introduction div.container {
+        flex-direction: row;
+    }
+
+    section.introduction div.container img  {
+        display: none;
+    }
+
+    section.introduction div.container div {
+        padding: 0;
+    }
+
+    section.introduction div.container div h3 {
+        margin-bottom: 15px;
+    }
+}

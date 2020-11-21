@@ -17,7 +17,7 @@ section.sobre div.container {
 }
 
 section.sobre div.container iframe {
-    width: 70%;
+    width: 100%;
     /* width: 1024px; */
     height: 600px;
     /* height: 100%; */
@@ -32,8 +32,9 @@ section.sobre div.container div.progress-videos {
     /* background-color: burlywood; */
 }
 section.sobre div.container div.progress-videos div.progress-bar {
-    width: 15%;
+    width: 100px;
     padding: 75px 0px 75px 0px;
+    margin-right: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -96,4 +97,120 @@ section.sobre div.container div.progress-videos div.videos div.video div.details
     padding-left: 50px;
     /* cursor: pointer; */
     /* background-color: blueviolet; */
+}
+
+@media (max-width: 1930px) {
+    section.sobre div.container iframe {
+        height: 900px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 1400px) {
+    section.sobre div.container iframe {
+        height: 600px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    section.sobre div.container iframe {
+        height: 350px;
+        margin-bottom: 50px;
+    }
+
+    section.sobre div.container div.progress-videos {
+        flex-direction: column;
+    }
+
+    section.sobre div.container div.progress-videos div.progress-bar {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 50px;
+        height: 50px;
+        flex-direction: row;
+        /* background-color: aqua; */
+    }
+
+    section.sobre div.container div.progress-videos div.progress-bar div.bolinha {
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+    }
+
+    section.sobre div.container div.progress-videos div.progress-bar div.barra {
+        width: 100px;
+        height: 15px;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+
+    section.sobre div.container div.progress-videos div.videos div.video {
+        flex-direction: column;
+    }
+
+    section.sobre div.container div.progress-videos div.videos div.video div.details-video {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    section.sobre div.container div.progress-videos div.videos div.video p {
+        margin-top: 10px;
+    }
+    section.sobre div.container div.progress-videos div.videos div.video a {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    section.sobre div.container iframe {
+        height: 170px;
+        margin-bottom: 20px;
+    }
+
+    section.sobre div.container div.progress-videos {
+        flex-direction: column;
+    }
+
+    section.sobre div.container div.progress-videos div.progress-bar {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 30px;
+        height: 50px;
+        flex-direction: row;
+        /* background-color: aqua; */
+    }
+
+    section.sobre div.container div.progress-videos div.progress-bar div.bolinha {
+        width: 25px;
+        height: 25px;
+        z-index: 1;
+    }
+
+    section.sobre div.container div.progress-videos div.progress-bar div.barra {
+        width: 50px;
+        height: 15px;
+        margin-left: -2px;
+        margin-right: -2px;
+    }
+
+    section.sobre div.container div.progress-videos div.videos div.video {
+        flex-direction: column;
+    }
+
+    section.sobre div.container div.progress-videos div.videos div.video div.details-video {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    section.sobre div.container div.progress-videos div.videos div.video p {
+        margin-top: 10px;
+    }
+    section.sobre div.container div.progress-videos div.videos div.video a {
+        margin-top: 10px;
+    }
 }

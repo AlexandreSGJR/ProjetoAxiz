@@ -9,54 +9,6 @@ for(let i = 0; i<cursos.length; i++){
     }
 }
 
-// document.getElementById('bt_zbrush').onclick = function () {
-//     changeCourse(videos.zbrush);
-//     desativarBts();
-//     document.getElementById('bt_zbrush').classList.add('bt_ativado');
-// };
-
-// document.getElementById('bt_maya').onclick = function () {
-//     changeCourse(videos.maya);
-//     desativarBts();
-//     document.getElementById('bt_maya').classList.add('bt_ativado');
-// };
-
-// document.getElementById('bt_texture').onclick = function () {
-//     changeCourse(videos.texture);
-//     desativarBts();
-//     document.getElementById('bt_texture').classList.add('bt_ativado');
-// };
-
-// document.getElementById('bt_mtr').onclick = function () {
-//     changeCourse(videos.modelagem_textura_render);
-//     desativarBts();
-//     document.getElementById('bt_mtr').classList.add('bt_ativado');
-// };
-
-// document.getElementById('bt_desenho').onclick = function () {
-//     changeCourse(videos.desenho);
-//     desativarBts();
-//     document.getElementById('bt_desenho').classList.add('bt_ativado');
-// };
-
-// document.getElementById('bt_personagem').onclick = function () {
-//     changeCourse(videos.personagem);
-//     desativarBts();
-//     document.getElementById('bt_personagem').classList.add('bt_ativado');
-// };
-
-// document.getElementById('bt_cenario').onclick = function () {
-//     changeCourse(videos.cenario);
-//     desativarBts();
-//     document.getElementById('bt_pintura').classList.remove('bt_ativado');
-// };
-
-// document.getElementById('bt_pintura').onclick = function () {
-//     changeCourse(videos.pintura);
-//     desativarBts();
-//     document.getElementById('bt_pintura').classList.add('bt_ativado');
-// };
-
 function changeTheme() {
     let theme = document.getElementById('id_tema').value;
     let menu_3d = document.getElementById('3d_menu');
@@ -66,13 +18,12 @@ function changeTheme() {
     theme == 2 ? menu_2d.style.display = 'flex' : menu_2d.style.display = 'none';
 
     desativarBts();
-
+    
     document.getElementById('id_iframe').src = `https://www.youtube.com/embed/`;
     document.getElementById('id_sec_course').style.display = 'none';
 }
 
 function desativarBts () {
-    
     var i = 0;
 
     while(i < bts.length) {
@@ -106,29 +57,14 @@ function changeCourse(array_video) {
             <div class="details-video">
                 <h2>${array_video[i].title}</h2>
                 <a href="${array_video[i].creditos}" target="blank">Créditos:
-                <u>${array_video[i].creditos}</u></a>
+                <u>${array_video[0].creditos_curso}</u></a>
             </div>
         </div>
         `;
     }
 
     for (var i = 1, j = 0; i <= ids.length; i++, j++) {
-        // console.log(i);
-        // console.log(`${array_video[0].name}${i}`);
-        // console.log(`${array_video[i].url}`);
-        // console.log(document.getElementById(`${array_video[0].name}${i}`));
-
         darFuncaoClick(ids[j],array_video[i].url);
-
-        // document.getElementById(`${array_video[0].name}${i}`).onclick = function () {
-            
-        //     document.getElementById('id_iframe').src = `https://www.youtube.com/embed/${array_video[i].url}/?&autoplay=1`;
-        //     console.log(i);
-        //     console.log(`${array_video[0].name}${i}`);
-        //     console.log(`${array_video[i].url}`);
-        //     console.log(document.getElementById(`${array_video[0].name}${i}`));
-    
-        // }
     }
 
     function limparSelecao(id) {
@@ -145,5 +81,4 @@ function changeCourse(array_video) {
             window.location.href = '#id_iframe';
         }
     }
-
 }

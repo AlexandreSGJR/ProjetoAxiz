@@ -13,6 +13,7 @@
 }
 
 header {
+    width: 100%;
     height: 100px;
     display: flex;
     border-bottom: 5px solid #8257E5;

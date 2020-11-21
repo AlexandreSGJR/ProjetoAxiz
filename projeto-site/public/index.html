@@ -29,18 +29,15 @@
             <h2>Escolha um caminho</h2>
             <div class="cont-options">
                 <div id="option1" class="option">
-                    <i class="fas fa-question fa-3x"></i>
-                    <!-- <img src="img/icons/question-lilas.svg"> -->
+                    <i id="icon_menu1" class="fas fa-question fa-3x"></i>
                     <p>Quero conhecer</p>
                 </div>
                 <div id="option2" class="option">
-                    <i class="fas fa-palette fa-3x"></i>
-                    <!-- <img src="img/icons/artist-lilas.svg"> -->
+                    <i id="icon_menu2" class="fas fa-palette fa-3x"></i>
                     <p>Quero aprender</p>
                 </div>
                 <div id="option3" class="option">
-                    <i class="fas fa-graduation-cap fa-3x"></i>
-                    <!-- <img src="img/icons/graduation-hat-lilas.svg"> -->
+                    <i id="icon_menu3" class="fas fa-graduation-cap fa-3x"></i>
                     <p>Quero uma escola</p>
                 </div>
             </div>
@@ -51,3 +48,20 @@
 </html>
 <script src="js/navigation.js"></script>
 <script src="js/sessao.js"></script>
+
+<script>
+    window.onload = verificarTela;
+    function verificarTela() {
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+
+        if(windowWidth <= 600) {
+            document.getElementById('icon_menu1').classList.remove('fa-3x');
+            document.getElementById('icon_menu1').classList.add('fa-2x');
+            document.getElementById('icon_menu2').classList.remove('fa-3x');
+            document.getElementById('icon_menu2').classList.add('fa-2x');
+            document.getElementById('icon_menu3').classList.remove('fa-3x');
+            document.getElementById('icon_menu3').classList.add('fa-2x');
+        }
+    }
+</script>

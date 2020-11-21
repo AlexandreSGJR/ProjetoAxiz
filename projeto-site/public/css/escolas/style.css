@@ -28,7 +28,7 @@ section.schools div.container div.school img {
 
 section.schools div.container div.school div.details-school {
     width: 90%;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 section.schools div.container div.school div.details-school h2 {
@@ -62,4 +62,22 @@ section.schools div.container div.school div.details-school div.social-media a i
 section.schools div.container div.school div.details-school div.social-media a img.img-first {
     border-radius: 0px;
     margin-left: 25px;
+}
+
+@media (max-width: 600px) {
+
+
+    section.schools div.container div.school {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    section.schools div.container div.school img {
+        margin-bottom: 25px;
+    }
+
+    section.schools div.container div.school div.details-school {
+        margin-left: 0;
+        text-align: justify;
+    }
 }

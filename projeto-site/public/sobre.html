@@ -56,7 +56,7 @@
                         <div class="details-video">
                             <h2>O que é?</h2>
                             <p>Nesse vídeo é explicado de forma rapida o que é e como funciona a computação gráfica.</p>
-                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos: <u>https://www.youtube.com/user/nerdologia</u></a>
+                            <a href="https://www.youtube.com/user/nerdologia" target="blank">Créditos: Nerdologia</a>
                         </div>
                     </div>
 
@@ -65,7 +65,7 @@
                         <div class="details-video">
                             <h2>Como era antes ?</h2>
                             <p>Como era antes do CG, as técnicas utilizadas nos filmes como "star wars" e "tempos modernos"</p>
-                            <a href="https://www.youtube.com/channel/UCli_uCS6jnJDfzswtGRlTGQ" target="blank">Créditos: <u>https://www.youtube.com/channel/UCli_uCS6jnJDfzswtGRlTGQ</u></a>
+                            <a href="https://www.youtube.com/channel/UCli_uCS6jnJDfzswtGRlTGQ" target="blank">Créditos: Painel Nerd</a>
                         </div>
                     </div>
 
@@ -74,7 +74,7 @@
                         <div class="details-video">
                             <h2>Até onde é possível ir ?</h2>
                             <p>Faça o teste desse vídeo e veja você mesmo se é possível reconhecer o real do digital.</p>
-                            <a href="https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA" target="blank">Créditos: <u>https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA</u></a>
+                            <a href="https://www.youtube.com/channel/UCEf5U1dB5a2e2S-XUlnhxSA" target="blank">Créditos: Diolinux</a>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@
                         <div class="details-video">
                             <h2>Um pouquinho da história...</h2>
                             <p>Vídeo do canal pipocando sobre a história do cinema juntamente com a história do CG.</p>
-                            <a href="https://www.youtube.com/channel/UCBFLqK7PAP9DQ3JpIrWFI7w" target="blank">Créditos: <u>https://www.youtube.com/channel/UCBFLqK7PAP9DQ3JpIrWFI7w</u></a>
+                            <a href="https://www.youtube.com/channel/UCBFLqK7PAP9DQ3JpIrWFI7w" target="blank">Créditos: Pipocando</a>
                         </div>
                     </div>
 
@@ -92,7 +92,7 @@
                         <div class="details-video">
                             <h2>Curiosidade</h2>
                             <p>Aqui temos uma pequena demonstração de como foi feito o personagem scar no filme REI LEÃO.</p>
-                            <a href="https://www.youtube.com/watch?v=C1c7Ymw2V90&t=24s" target="blank">Créditos: <u>https://www.youtube.com/watch?v=C1c7Ymw2V90&t=24s</u></a>
+                            <a href="https://www.youtube.com/watch?v=C1c7Ymw2V90&t=24s" target="blank">Créditos: Gabriel Com Y</a>
                         </div>
                     </div>
 
@@ -101,7 +101,7 @@
                         <div class="details-video">
                             <h2>Um pouquinho sobre o mercado...</h2>
                             <p>Live de bate papo entre profissionais da area, como o diretor da faculdade Melies, uma das faculdades mais conceituadas no mundo do CG.</p>
-                            <a href="https://www.youtube.com/channel/UCab7N4IEP80Y4EUCschf22Q" target="blank">Créditos: <u>https://www.youtube.com/channel/UCab7N4IEP80Y4EUCschf22Q</u></a>
+                            <a href="https://www.youtube.com/channel/UCab7N4IEP80Y4EUCschf22Q" target="blank">Créditos: Faculdade Méliès</a>
                         </div>
                     </div>
                 </div>
@@ -141,5 +141,20 @@
 
     document.getElementById('video6').onclick = function () {
         changeVideo('id_iframe','pTk8rrt87tw','video6');
+    }
+
+    window.onload = verificarTela;
+    function verificarTela() {
+        var windowWidth = window.innerWidth;
+        var windowHeight = window.innerHeight;
+
+        if(windowWidth <= 600) {
+            document.getElementById('icon_menu1').classList.remove('fa-3x');
+            document.getElementById('icon_menu1').classList.add('fa-2x');
+            document.getElementById('icon_menu2').classList.remove('fa-3x');
+            document.getElementById('icon_menu2').classList.add('fa-2x');
+            document.getElementById('icon_menu3').classList.remove('fa-3x');
+            document.getElementById('icon_menu3').classList.add('fa-2x');
+        }
     }
 </script>
