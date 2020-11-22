@@ -3,7 +3,7 @@ let bts = ['bt_zbrush', 'bt_maya', 'bt_texture', 'bt_mtr', 'bt_desenho', 'bt_per
 let cursos_off = [videos_off.zbrush, videos_off.maya, videos_off.texture, videos_off.modelagem_textura_render, videos_off.desenho, videos_off.personagem, videos_off.cenario, videos_off.pintura]
 
 // let online = false;
-let online = true;
+let online = navigator.onLine;
   
 // function verificarRede() {
 //     online = true;

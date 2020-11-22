@@ -42,7 +42,8 @@
                     <span id="id_msg_login" style="align-self: center; font-size: 14px;"></span>
                     <form id="form_login" method="post" onsubmit="return entrar()">
                         <input type="email" name="login" id="id_login_email" required placeholder="Email:">
-                        <input type="password" name="senha" id="id_login_senha" required minlength="5" placeholder="Senha:">
+                        <input type="password" name="senha" id="id_login_senha" required minlength="5"
+                            placeholder="Senha:">
                         <button>LOGIN</button>
                         <p id="cadastro">Cadastre-se</p>
                     </form>
@@ -63,7 +64,8 @@
                     <form id="form_cadastro" method="POST" onsubmit="return cadastrar()">
                         <input type="text" name="nome" id="id_signin_nome" required minlength="5" placeholder="Nome:">
                         <input type="email" name="login" id="id_signin_email" required placeholder="Email:">
-                        <input type="password" name="senha" id="id_signin_senha" required minlength="5" placeholder="Senha:">
+                        <input type="password" name="senha" id="id_signin_senha" required minlength="5"
+                            placeholder="Senha:">
                         <button>CADASTRAR</button>
                         <p id="voltar">Cancelar</p>
                     </form>
@@ -117,41 +119,58 @@
 
         return false;
     }
+    
+    var online = navigator.onLine;
+    alert(online)
+    console.log(navigator.onLine)
 
     function entrar() {
-        aguardar(form_login, img_aguarde_login);
-        var formulario = new URLSearchParams(new FormData(form_login));
-        fetch("/usuarios/autenticar", {
-            method: "POST",
-            body: formulario
-        }).then(resposta => {
 
-            if (resposta.ok) {
+        if (online == true) {
 
-                resposta.json().then(json => {
+            aguardar(form_login, img_aguarde_login);
+            var formulario = new URLSearchParams(new FormData(form_login));
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                body: formulario
+            }).then(resposta => {
 
-                    sessionStorage.login_usuario_meuapp = json.login;
-                    sessionStorage.nome_usuario_meuapp = json.nome;
+                if (resposta.ok) {
 
-                    sessionStorage.setItem("acesso", 1);
-                    window.location.href = 'index.html';
-                });
+                    resposta.json().then(json => {
 
+                        sessionStorage.login_usuario_meuapp = json.login;
+                        sessionStorage.nome_usuario_meuapp = json.nome;
+
+                        sessionStorage.setItem("acesso", 1);
+                        window.location.href = 'index.html';
+                    });
+
+                } else {
+
+                    console.log('Erro de login!');
+                    id_login_email.style.borderColor = `red`;
+                    id_login_senha.style.borderColor = `red`;
+
+                    id_msg_login.innerText = "Email ou Senha inválidos!";
+                    resposta.text().then(texto => {
+                        console.error(texto);
+                        finalizar_aguardar(form_login, img_aguarde_login);
+                    });
+                }
+            });
+
+            return false;
+        } else {
+            if (id_login_email.value == "admin@admin" && id_login_senha.value == "admin123") {
+                sessionStorage.setItem("acesso", 1);
+                window.location.href = 'index.html';
             } else {
-
-                console.log('Erro de login!');
+                alert('Você não está online e não é um administrador');
                 id_login_email.style.borderColor = `red`;
                 id_login_senha.style.borderColor = `red`;
-
-                id_msg_login.innerText = "Email ou Senha inválidos!";
-                resposta.text().then(texto => {
-                    console.error(texto);
-                    finalizar_aguardar(form_login, img_aguarde_login);
-                });
             }
-        });
-
-        return false;
+        }
     }
 
 
