@@ -313,3 +313,109 @@ var videos = {
         },
     ]
 };
+
+videos_off = {
+    zbrush: [
+        {   
+            name: 'zbrush',
+            title_curso: 'Curso RÁPIDO de Zbrush | Workbox',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'Curso Básico de Zbrush - Conhecendo a Interface | Workbox',
+            url: 'zbrush1',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY8nItX2B2FXWkJoGGxFSBle'
+        },
+    ],
+
+    maya: [
+        {
+            name: 'maya',
+            title_curso: 'Tutoriais Maya | Workbox 3D',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'Curso de Introdução ao Maya • Aula 1/6 | WorkBox',
+            url: 'maya1',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY_lheNMD1ADa5_tFZHyH3b6'
+        },
+    ],
+
+    texture: [
+        {
+            name: 'texture',
+            title_curso: 'Retopologia e Textura | Workbox 3D',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'O que é Retopologia? | Workbox',
+            url: 'texture1',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY_PWDPgyZg03_JlH3zuJus_'
+        },
+    ],
+
+    modelagem_textura_render: [
+        {
+            name: 'mtr',
+            title_curso: 'Modelagem, Textura e Render | Workbox 3D',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'Modelagem, Textura e Render • Parte 1 | Workbox',
+            url: '',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY_5ZejrQzcCCcQxcBgh_LIF'
+        },
+    ],
+
+    desenho: [
+        {
+            name: 'desenho',
+            title_curso: 'Desenho Básico | Workbox 2D',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'Curso de Desenho Básico - Perspectiva | Workbox',
+            url: 'desenho1',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY-8_56lKzfoTgrO7PzFV1Bs'
+        },
+    ],
+    
+    personagem: [
+        {
+            name: 'personagem',
+            title_curso: 'Como Criar Personagens | Workbox',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'Como Criar Personagens - Usando Formas Básicas | Workbox',
+            url: 'personagem1',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY-dx5sI2uA34VbYpCMFtok0'
+        },
+    ],
+
+    cenario: [
+        {
+            name: 'cenario',
+            title_curso: 'Curso Criando Cenários | Workbox',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'Criando Cenários - Thumbnails | Workbox',
+            url: 'cenario1',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY9ZeT5K66h4Xmt8Qa8E3Z5i'
+        },
+    ],
+
+    pintura: [
+        {
+            name: 'pintura',
+            title_curso: 'Cursos de Pintura Digital Completo | Workbox',
+            creditos_curso: 'Escola revolution'
+        },
+        {
+            title: 'Curso de Pintura Digital - Interface e Blocagem da Pintura | Workbox',
+            url: 'pintura1',
+            creditos: 'https://www.youtube.com/playlist?list=PLJASh3gCRKY8h4b6PH2vSNua_X8rKwZ0K'
+        },
+    ],
+};
