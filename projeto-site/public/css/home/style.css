@@ -12,16 +12,35 @@ section.options div.container {
 
 section.options div.container h2 {
     font-size: 32px;
-    margin-bottom: 100px;
     color: #fefefe;
 }
 
 section.options div.container div.cont-options {
     max-width: 800px;
+    margin-top: 100px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    animation-duration: 4s;
+    animation-name: sizein;
 }
+
+
+@keyframes sizein {
+    from {
+        opacity: 0;
+        margin-top: 0px;
+    }
+
+    50% {
+        margin-top: 100px;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 
 section.options div.container div.cont-options div.option {
     width: 250px;
@@ -84,13 +103,29 @@ section.options div.container div.cont-options div.option:hover {
     }
 
     section.options div.container h2 {
-        margin-bottom: 25px;
+        /* margin-bottom: 25px; */
     }
 
     section.options div.container div.cont-options {
         width: 100%;
+        margin-top: 25px;
         flex-direction: column;
+        animation-name: sizein_500;
+        animation-duration: 0.8s;
     }
+
+    @keyframes sizein_500 {
+        from {
+            opacity: 0;
+            margin-top: 0px;
+        }
+
+        to {
+            opacity: 1;
+            margin-top: 25px;
+        }
+    }
+
     section.options div.container div.cont-options div.option {
         width: 200px;
         height: 130px;

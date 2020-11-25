@@ -35,10 +35,26 @@ section.cursos div.container div.info select option:disabled {
     background-color: #CECECE;
 }
 
+
+
 section.cursos div.container div.choose-course {
     display: flex;
     flex-wrap: wrap;
     margin-top: 50px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: 100px;
+        opacity: 0;
+    }
+    
+    to {
+        margin-top: 50px;
+        opacity: 1;
+    }
 }
 
 section.cursos div.container div.choose-course div.bt-course {
@@ -86,6 +102,20 @@ section.cursos div.container section.course {
     flex-direction: column;
     border-radius: 20px;
     border: 1px solid #8257E5;
+    animation-duration: 2s;
+    animation-name: sliedein_course;
+}
+
+@keyframes slidein_course {
+    from {
+        display: none;
+        opacity: 0;
+    }
+
+    to {
+        display: flex;
+        opacity: 1;
+    }
 }
 
 section.cursos div.container section.course div.title {
